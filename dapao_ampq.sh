@@ -2,6 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 #说明：amqp.1.10.2仅适用于php5.6版本以上，pear1.4版本以上,系统要求，CentOS7，其他操作系统后续会陆续增加
+#使用方法： 以php7.4为例，将本脚本保存在服务器上，bash dapao_amqp.sh install 74
 
 public_file=/www/server/panel/install/public.sh
 [ ! -f $public_file ] && wget -O $public_file http://download.bt.cn/install/public.sh -T 5;
